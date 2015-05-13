@@ -7,9 +7,16 @@
  */
 
 html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -17,7 +24,7 @@ html {
  */
 
 body {
-  margin: 0;
+margin: 0;
 }
 
 /* HTML5 display definitions
@@ -429,7 +436,7 @@ body {
     background-color: LightGray;
 }
 div {
-    border: 1px solid Chocolate;
+    border: 1px solid white;
 }
 .top-navigation{
   background-color: #fff;
@@ -439,4 +446,28 @@ div {
   width:970px;
   height:70px;
   margin:0 auto;
+  padding:0px 15px;
+ }
+.top-navigation .content > .links {
+  float:right;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px; 
+  color: #838994; 
+  letter-spacing: 0.03em;
+  margin-top: 25px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li{
+  display:inline-block;
+  margin-left: 25px;
+  padding:7px;
+}
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 600;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
