@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -436,7 +437,7 @@ body {
     background-color: LightGray;
 }
 div {
-    border: 1px solid white;
+    border: 0px solid white;
 }
 .top-navigation{
   background-color: #fff;
@@ -477,4 +478,10 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
+    color: #fff;
+}
+.introduction > .content {
+  width:970px;
+  margin:0 auto;
+  padding:0px 15px; 
 }
