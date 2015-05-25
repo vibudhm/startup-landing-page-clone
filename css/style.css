@@ -7,6 +7,8 @@
  */
 
 html {
+  height:100%;
+  min-height:100%;
   box-sizing: border-box;
   
 }
@@ -26,6 +28,7 @@ html {
 
 body {
 margin: 0;
+min-height:100%;
 }
 
 /* HTML5 display definitions
@@ -473,15 +476,44 @@ div {
     color: #333333;
 }
 .introduction {
-    background-image: url('../images/first-background.jpg');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45.938rem;
-    color: #fff;
+  background-image: url('../images/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47rem;
+  width: 100%;
+  overflow: auto;
 }
-.introduction > .content {
-  width:970px;
-  margin:0 auto;
-  padding:0px 15px; 
+.content {
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
 }
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+
+.introduction h1, .introduction h3 {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+}
+.big-button {
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+  display: block;
+  margin: 0 auto;
+}
+.big-button:hover{
+  background-color: #E6260F;
+}
+
