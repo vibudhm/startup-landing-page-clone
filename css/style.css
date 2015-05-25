@@ -444,6 +444,9 @@ div {
 }
 .top-navigation{
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .top-navigation > .content {
@@ -516,4 +519,27 @@ div {
 .big-button:hover{
   background-color: #E6260F;
 }
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+.cases > .content {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+}
+
+
+.cases  .content  .devices li{
+    width: 22%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 0px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
+
 
