@@ -437,7 +437,7 @@ th {
   padding: 0;
 }
 body {
-    background-color: LightGray;
+    background-color: White;
 }
 div {
     border: 0px solid white;
@@ -543,3 +543,36 @@ div {
 }
 
 
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+}
+
+.social h5{
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.social .icons > li{
+  display: inline-block;
+  width: 5%;
+}
+
+.social hr{
+  margin:0 15rem;
+  margin-top: 5rem;
+  border: none;
+  height: 1px;
+    /* Set the hr color */
+  color: silver; /* old IE */
+  background-color: silver;
+
+}
+
+.social p{
+  color: silver;
+  margin-left: 2rem;
+}
